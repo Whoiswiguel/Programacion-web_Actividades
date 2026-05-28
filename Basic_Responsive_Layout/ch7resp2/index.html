@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Grid Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; background-color: #fff; }
+        header, footer { background-color: #9fb4c7; padding: 1em; text-align: center; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; }
+        nav li { border-bottom: 1px solid #ccc; padding: .5em; }
+        nav a { text-decoration: none; font-weight: bold; }
+        main, aside { padding: 1em; }
+        aside img { max-width: 100%; height: auto; }
+        @media (min-width: 600px) {
+            nav ul { display: flex; flex-flow: row nowrap; justify-content: space-around; }
+            nav ul li { border-bottom: none; }
+            header { grid-area: header; } nav { grid-area: nav; } main { grid-area: main; } aside { grid-area: aside; } footer { grid-area: footer; }
+            #wrapper { display: grid; grid-template: "header header" "nav nav" "main aside" "footer footer" / 55% 45%; }
+        }
+        @media (min-width: 1024px) {
+            body { background-color: #000066; }
+            nav ul { display: flex; flex-direction: column; flex-wrap: nowrap; }
+            #wrapper { width: 80%; margin: auto; max-width: 1200px; display: grid; grid-template: "header header header" "nav main aside" "footer footer footer" / 150px 1fr 300px; }
+        }
+    </style>
+</head>
+<body><div id="wrapper">
+<header><h1>Lighthouse Bistro</h1></header>
+<nav><ul><li><a href="#">Home</a></li><li><a href="#">Menu</a></li><li><a href="#">Directions</a></li><li><a href="#">Contact</a></li></ul></nav>
+<main><h2>Locally Roasted Free-Trade Coffee</h2><p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p><h2>Lunchtime is Anytime</h2><p>Enjoy delicious wraps and sandwiches on hearty bread.</p></main>
+<aside><img src="lighthouse.jpg" alt="Lighthouse"><p>Panoramic view of the countryside.</p></aside>
+<footer>Copyright &copy; 2026</footer>
+</div></body>
+</html>

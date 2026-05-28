@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexible Images</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background-image: url(header.jpg); background-repeat: no-repeat; background-size: cover; min-height: 300px; color: white; display: flex; align-items: center; justify-content: center; text-shadow: 2px 2px 5px #000; }
+        img { max-width: 100%; height: auto; }
+        main { padding: 1em; display: grid; gap: 1em; }
+        @media (min-width: 38em) { main { grid-template-columns: 1fr 1fr; } }
+        @media (min-width: 65em) { main { grid-template-columns: 1fr 1fr 1fr; max-width: 1200px; margin: auto; } }
+    </style>
+</head>
+<body>
+    <header><h1>Responsive Web Design</h1></header>
+    <main>
+        <section><h2>Flexible Images</h2><img src="pools.jpg" alt="Pools"><p>Images resize to fit the container.</p></section>
+        <section><h2>Fluid Layout</h2><p>The grid changes with the browser width.</p></section>
+        <section><h2>Media Queries</h2><p>Breakpoints create tablet and desktop layouts.</p></section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Three Column Grid Areas</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { grid-area: header; background-image: url(header.jpg); color: white; padding: 1em; }
+        nav { grid-area: nav; background-color: #e6eef5; padding: 1em; }
+        main { grid-area: main; padding: 1em; }
+        aside { grid-area: aside; background-color: #eeeeee; padding: 1em; }
+        aside img { max-width: 100%; height: auto; }
+        footer { grid-area: footer; background-color: #9fb4c7; text-align: center; padding: 1em; }
+        #wrapper { display: grid; grid-template-columns: 150px 1fr 30%; grid-template-rows: 100px auto 50px; grid-template-areas: "header header header" "nav main aside" "footer footer footer"; width: 90%; margin: auto; }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1>Grid Template Areas</h1></header>
+        <nav><a href="#">Home</a><br><a href="#">About</a><br><a href="#">Contact</a></nav>
+        <main><h2>Main Content</h2><p>This page uses named grid areas to organize a three-column layout.</p></main>
+        <aside><img src="scenery.jpg" alt="Scenery"><p>Aside information.</p></aside>
+        <footer>Copyright &copy; 2026</footer>
+    </div>
+</body>
+</html>
