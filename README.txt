@@ -10,7 +10,3 @@ Contenido:
 
 Puedes abrir el archivo index.html de esta carpeta para navegar por todas las prácticas.
 Las imágenes faltantes fueron reemplazadas por imágenes generadas de apoyo con el mismo nombre que piden los ejercicios.
-
-
-ACTUALIZACIÓN - Basic_Forms
-Se agregó la carpeta Basic_Forms con prácticas de formularios HTML: form1, form2, labels, fieldset/legend, CSS para formularios, conexión a demo.php, controles HTML5, select list, checkboxes, radio buttons, password y file upload.
