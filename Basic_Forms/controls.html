@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form Controls</title>
+<meta charset="utf-8">
+<style>
+body { font-family: Arial, sans-serif; margin: 2em; }
+fieldset { width: 430px; margin-bottom: 1em; padding: 1em; }
+label { display: block; margin: .5em 0; }
+</style>
+</head>
+<body>
+<h1>Form Controls Practice</h1>
+<form method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Account</legend>
+    <label>Username: <input type="text" name="username" id="username" required></label>
+    <label>Password: <input type="password" name="pword" id="pword"></label>
+    <label>Profile Photo: <input type="file" name="photo" id="photo" accept="image/*"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Browsers You Use</legend>
+    <label><input type="checkbox" name="chrome" id="chrome" value="yes"> Google Chrome</label>
+    <label><input type="checkbox" name="firefox" id="firefox" value="yes"> Firefox</label>
+    <label><input type="checkbox" name="edge" id="edge" value="yes"> Microsoft Edge</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Favorite Browser</legend>
+    <label><input type="radio" name="favbrowser" id="favChrome" value="Chrome"> Google Chrome</label>
+    <label><input type="radio" name="favbrowser" id="favFirefox" value="Firefox"> Firefox</label>
+    <label><input type="radio" name="favbrowser" id="favEdge" value="Edge"> Microsoft Edge</label>
+  </fieldset>
+
+  <input type="hidden" name="sendto" id="sendto" value="order@site.com">
+  <input type="submit" value="Send">
+  <input type="reset">
+</form>
+</body>
+</html>

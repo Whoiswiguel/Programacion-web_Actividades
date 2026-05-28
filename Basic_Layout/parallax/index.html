@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kayak Door County</title>
+    <meta charset="utf-8">
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #222; }
+        nav { position: sticky; top: 0; background-color: rgba(0,0,0,.8); padding: .8em; z-index: 2; }
+        nav a { color: #fff; margin-right: 1em; text-decoration: none; font-weight: bold; }
+        .hero, .tourshero, .rentalshero, .contacthero { min-height: 70vh; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 5px #000; background-attachment: fixed; }
+        .hero { background-image: url(hero.jpg); }
+        .tourshero { background-image: url(tours.jpg); }
+        .rentalshero { background-image: url(rentals.jpg); }
+        .contacthero { background-image: url(contact.jpg); }
+        section { padding: 2em 10%; }
+        footer { background-color: #0f172a; color: white; text-align: center; padding: 1em; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">KayakDoorCounty.net</a>
+        <a href="#tours">Tours</a>
+        <a href="#rentals">Rentals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header id="home" class="hero"><h1>Kayak Door County</h1></header>
+    <section><h2>Explore the Water</h2><p>Enjoy guided kayak tours and beautiful views.</p></section>
+    <div id="tours" class="tourshero"><h2>Tours</h2></div>
+    <section><p>Morning, afternoon, and sunset tours are available.</p></section>
+    <div id="rentals" class="rentalshero"><h2>Rentals</h2></div>
+    <section><p>Rent kayaks, paddles, and safety equipment.</p></section>
+    <div id="contact" class="contacthero"><h2>Contact</h2></div>
+    <section><p>Email us to reserve your tour.</p></section>
+    <footer>Copyright &copy; 2026 Kayak Door County</footer>
+</body>
+</html>

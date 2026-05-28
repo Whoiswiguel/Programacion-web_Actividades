@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The CSS Cascade</title>
+    <meta charset="utf-8">
+    <style>
+        body { color: #003366; background-color: #f0f8ff; font-family: Arial, sans-serif; }
+        p { color: #006600; }
+        .special { color: #990000; }
+    </style>
+</head>
+<body>
+    <h1>The Cascade</h1>
+    <p>This paragraph uses the paragraph style.</p>
+    <p class="special">This paragraph uses a class style that overrides the paragraph color.</p>
+    <p class="special" style="color:#663399;">This paragraph uses inline CSS, so it overrides the class style.</p>
+</body>
+</html>

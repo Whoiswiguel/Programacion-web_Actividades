@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Validation Plugin</title>
+    <meta charset="utf-8">
+    <style>
+        label { display: block; margin-top: .75em; }
+        label.error { color: #990000; font-weight: bold; }
+        input { display: block; }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#contactForm').validate();
+        });
+    </script>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form id="contactForm" method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <label for="name">Name</label>
+        <input id="name" name="name" class="required" type="text">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" class="required email" type="email">
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" class="required"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

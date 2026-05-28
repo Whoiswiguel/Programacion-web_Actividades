@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Toggle Practice</title>
+    <meta charset="utf-8">
+    <style>#details { display: none; }</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#more').click(function(){ $('#details').slideToggle('slow'); });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery</h1>
+    <p>Many websites use jQuery to provide interaction and dynamic effects. <a href="#" id="more">More</a></p>
+    <div id="details"><p>The jQuery API works along with JavaScript and provides easy ways to manipulate CSS, detect events, and animate elements.</p></div>
+</body>
+</html>

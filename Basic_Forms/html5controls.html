@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 Form Controls</title>
+<meta charset="utf-8">
+<style>
+body { font-family: Arial, sans-serif; margin: 2em; }
+label { display: block; margin-top: .8em; }
+input { margin-top: .2em; }
+</style>
+</head>
+<body>
+<h1>HTML5 Form Controls</h1>
+<form method="get">
+  <label for="myEmail">E-mail:</label>
+  <input type="email" name="myEmail" id="myEmail" placeholder="name@example.com">
+
+  <label for="myWebsite">Suggest a Website:</label>
+  <input type="url" name="myWebsite" id="myWebsite" placeholder="https://example.com">
+
+  <label for="mobile">Mobile Number:</label>
+  <input type="tel" name="mobile" id="mobile">
+
+  <label for="keyword">Search:</label>
+  <input type="search" name="keyword" id="keyword">
+
+  <label for="color">Favorite Color:</label>
+  <input type="text" name="color" id="color" list="colors">
+  <datalist id="colors">
+    <option value="red" label="red">
+    <option value="green" label="green">
+    <option value="blue" label="blue">
+    <option value="yellow" label="yellow">
+    <option value="pink" label="pink">
+    <option value="black" label="black">
+  </datalist>
+
+  <label for="myChoice">Choose a number between 1 and 100:</label>
+  Low <input type="range" name="myChoice" id="myChoice" min="1" max="100"> High
+
+  <label for="myNumber">Choose a number between 1 and 10:</label>
+  <input type="number" name="myNumber" id="myNumber" min="1" max="10">
+
+  <label for="myDate">Choose a Date:</label>
+  <input type="date" name="myDate" id="myDate">
+
+  <label for="myColor">Choose a color:</label>
+  <input type="color" name="myColor" id="myColor">
+
+  <br><br>
+  <input type="submit" value="Send">
+  <input type="reset">
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-color: #E2FFFF;
+    color: #15495E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #237B7B;
+    color: #E2FFFF;
+    padding: 1em;
+}
+h1 { margin: 0; }
+h2 {
+    background-color: #B0E6E6;
+    color: #237B7B;
+    padding: 0.25em;
+}
+nav { font-weight: bold; margin: 1em 0; }
+footer { font-size: .80em; font-style: italic; }
